@@ -1,0 +1,12 @@
+management:
+  endpoints:
+    web:
+      base-path: /management
+      exposure:
+        include: ["auditevents", "configprops", "env", "health", "info", "loggers", "metrics", "threaddump"]
+  endpoint:
+    health:
+      show-details: always
+  info:
+    build:
+      enabled: true

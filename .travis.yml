@@ -5,9 +5,9 @@ before_install:
 
 addons:
   sonarcloud:
-    organization: "chave_da_organização"
+    organization: "mateuscppoi-github"
     token:
-      secure: "token_de_segurança"
+      secure: "2d64b2491f2b7143559f9c20ae13228738999dbb"
 
 script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
@@ -15,8 +15,8 @@ script:
 deploy:
   provider: heroku
   skip_cleanup: true
-  api_key:
-    secure: "chave_de_acesso_do_heroku"
+  api_key: "282ad78d-048b-4a86-a23c-01e6304acc4d"
+
 
 cache:
   directories:

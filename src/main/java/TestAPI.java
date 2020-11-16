@@ -10,4 +10,9 @@ public class TestAPI {
     public String pong() {
         return "pong";
     }
+
+    @GetMapping("/ying")
+    public String yang() {
+        return "yang";
+    }
 }
